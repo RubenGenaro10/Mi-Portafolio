@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon SVG inline -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary Meta -->
+    <title>Ruben Velasquez — Full Stack Developer</title>
+    <meta name="description" content="Portafolio de Ruben Genaro Velasquez Chambi — Full Stack Developer especializado en Java, .NET, Vue, React, Flutter, Kotlin y más. Construyo soluciones web y móviles completas." />
+    <link rel="canonical" href="https://rubengenaro.dev/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rubengenaro.dev/" />
+    <meta property="og:title" content="Ruben Velasquez — Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Developer especializado en Java, .NET, Vue, React, Flutter y Kotlin. Soluciones web y móviles completas." />
+    <meta property="og:image" content="https://rubengenaro.dev/og-image.png" />
+    <meta property="og:site_name" content="Ruben Velasquez Portfolio" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ruben Velasquez — Full Stack Developer" />
+    <meta name="twitter:description" content="Full Stack Developer: Java, .NET, Vue, React, Flutter, Kotlin." />
+    <meta name="twitter:image" content="https://rubengenaro.dev/og-image.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ruben Genaro Velasquez Chambi",
+      "jobTitle": "Full Stack Developer",
+      "description": "Full Stack Developer especializado en Java, Spring Boot, .NET, Vue.js, React, Flutter y Kotlin.",
+      "url": "https://rubengenaro.dev/",
+      "email": "rubengenaro10@gmail.com",
+      "sameAs": [
+        "https://github.com/RubenGenaro10",
+        "https://www.linkedin.com/in/ruben-genaro-velasquez-chambi-a40674316/"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Theme init (prevents flash) -->
+    <script>
+      (function () {
+        const stored = localStorage.getItem('portfolio-theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored === 'dark' || stored === 'light' ? stored : systemDark ? 'dark' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
